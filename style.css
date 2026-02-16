@@ -1,21 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-
-  .grid-yellow, .grid-green {
+.grid-green {
     display: grid;
-    gap: 5px;
-    margin-bottom: 40px;
-  }
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
 
-  .grid-yellow {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .grid-yellow div {
-    background-color: gold;
+.grid-green div {
+    background-color: limegreen;
     padding: 20px;
     text-align: center;
-  }
+}
 
- 
+.span-2 {
+    grid-row: span 2;
+}
+
+.span-3 {
+    grid-row: span 3;
+}
